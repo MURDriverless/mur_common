@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-add_message_files(
+add_message_files(DIRECTORY msg
    FILES
    cone_msg.msg
  )
@@ -18,12 +18,11 @@ generate_messages(
    std_msgs
  )
 
-include_directories(
- include
-  ${catkin_INCLUDE_DIRS}
-)
-
 catkin_package(
   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 )
 
+include_directories(
+ include
+  ${catkin_INCLUDE_DIRS}
+)

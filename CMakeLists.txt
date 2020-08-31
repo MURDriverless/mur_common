@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(DIRECTORY msg
    FILES
    cone_msg.msg
+   mur_drive_cmd.msg
  )
 
 generate_messages(

@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(DIRECTORY msg
    FILES
    cone_msg.msg
+   actuation.msg
  )
 
 generate_messages(

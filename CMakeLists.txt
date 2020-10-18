@@ -13,6 +13,7 @@ add_message_files(DIRECTORY msg
    cone_msg.msg
    actuation_msg.msg
    path_msg.msg
+   diagnostic_msg.msg
  )
 
 generate_messages(
